@@ -13,7 +13,7 @@
 /PACKAGES/
 *.plt
 /plugins/
-/rebar.config
+#/rebar.config
 /rebar.lock
 /test/ct.cover.spec
 /xrefr

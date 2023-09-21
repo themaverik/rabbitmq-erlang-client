@@ -1,0 +1,10 @@
+{application, amqp_client,
+ [{description, "RabbitMQ AMQP Client"},
+  {vsn, "3.8.x"},
+  {modules, []},
+  {registered, [amqp_sup]},
+  {env, [{prefer_ipv6, false},
+         {ssl_options, []}, 
+         {writer_gc_threshold, true}]},
+  {mod, {amqp_client, []}},
+  {applications, [kernel, stdlib, xmerl, rabbit_common, credentials_obfuscation]}]}.
